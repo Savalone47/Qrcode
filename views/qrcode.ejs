@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Qrcode</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 50px;"> QRCode with Node.js</h1>
+    <div class="nav justify-content-center">
+    <div class="card border-primary mb-3" style="width: 18rem;margin-top: 20px;">
+        <div class="card-header">User information</div>
+        <div class="card-body text-primary">
+            <form action="/" method="post">
+                <input type="text" name="name" placeholder="Enter Name" class="form-control"><br>
+                <input type="text" name="phone" placeholder="Enter Phone number" class="form-control"><br>
+               <div class="text-center"> <input type="submit" value="Qrcode" class="btn btn-primary"> </div> 
+             </form>
+        </div>
+      </div>
+    </div>
+    <%if(data){%> 
+        <div class="text-center">
+         <h5>Made Your Scan QRCode</h5>
+        <img src="<%=data%>" alt="" style="width:200px; height:200px;">
+         </div>
+    <%}%>
+</body>
+</html>
