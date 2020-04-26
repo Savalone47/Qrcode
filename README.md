@@ -1,10 +1,11 @@
-Install Packages
+# Install Packages
 
--- npm install
+```
+ npm install
+```
+# Start Application
 
-Start Application
-
--- npm run start
-
--- npm run dev
-
+```
+ npm run start
+ npm run dev
+```
